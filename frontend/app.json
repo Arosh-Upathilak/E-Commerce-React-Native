@@ -24,6 +24,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "80aee52d-7962-43ab-b0ba-be6838ada656"
+      }
+    },
+    "owner": "aau2000"
   }
 }

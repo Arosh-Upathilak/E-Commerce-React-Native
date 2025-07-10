@@ -6,6 +6,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import { connectDB } from './config/db.js'
+import userRouter from './routes/userRouter.js'
 
 dotenv.config();
 
@@ -22,6 +23,9 @@ app.use(cors())
 //db connection
 connectDB();
 
+
+//api end point
+app.use("/",userRouter)
 
 
 
